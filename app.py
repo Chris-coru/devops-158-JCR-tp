@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
 	return "A Warrior acts as if he knows what he is doing, when in effect he knows nothing. -D.J."
 
-if __name__ =='__main__':
+if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000)
 
 
