@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return "A Warrior acts as if he knows what he is doing - version webhook OK."
+	return "HELLO M. Lagona"
 
 
 if __name__ == '__main__':
