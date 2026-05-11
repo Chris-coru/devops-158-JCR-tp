@@ -27,12 +27,14 @@ pipeline {
             }
         }
 
+
         stage('Run Flask') {
             steps {
                 sh '''
                 pkill -f "python3 app.py" || true
                 . venv/bin/activate
                 nohup python3 app.py > flask.log 2>&1 &
+                sleep 2
                 '''
             }
         }
